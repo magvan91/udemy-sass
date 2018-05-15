@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,700');
+
+$blanco: #ffffff;
+$azul: #0549cc;
+$amarillo: #ddf517;
+$negro: #000000;
+$rojo: #e70707;
+$azul_plomo: #168bc4;
+
+$color-letra-principal: $negro;
+$color-titulos: $amarillo;
+$fuente-principal: 'Open Sans', sans-serif;
+$fuente-titulos:'Bitter', serif;
+
+
+body{
+  background-color: $azul_plomo;
+  font-size: 1.4rem;
+  color: $color-letra-principal;
+  font-family: $fuente-principal;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: $color-titulos;
+  font-family: $fuente-titulos;
+}

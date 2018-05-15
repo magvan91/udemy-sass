@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,700");
+body {
+  background-color: #168bc4;
+  font-size: 1.4rem;
+  color: #000000;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ddf517;
+  font-family: "Bitter", serif; }
