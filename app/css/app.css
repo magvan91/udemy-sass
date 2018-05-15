@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,700");
+/* Medias queries */
 body {
+  margin: 0;
+  padding: 0;
   background-color: #168bc4;
   font-size: 1.4rem;
   color: #000000;
@@ -8,3 +11,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #ddf517;
   font-family: "Bitter", serif; }
+
+.container {
+  margin: 0 auto;
+  max-width: 80%; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 1000px; } }
