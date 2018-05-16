@@ -55,3 +55,32 @@ h1,h2,h3,h4,h5,h6{
   }
 
 }
+
+.navegacion{  
+  h2{
+    margin: 0;
+    float: left;
+    display: none;
+    @include tablet{
+      display: block;
+    }
+  }
+  nav{
+    display: inline;
+    margin-top: 10px;
+
+    @include tablet{
+      float: right;
+    }
+    a{
+      color: $blanco;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline;
+      text-align: center;
+      &:hover{
+        color: $amarillo;
+      }
+    }
+  }
+}
