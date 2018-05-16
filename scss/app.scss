@@ -136,5 +136,22 @@ h1,h2,h3,h4,h5,h6{
   }
   p{
     color: $blanco;
+    font-weight: 700;
+  }
+}
+
+#contenido-principal{
+  box-sizing: border-box;
+
+  @include tablet{
+    width: 66.7%;
+    float: left;
+  }
+}
+
+aside{
+  @include tablet{
+    float: right;
+    width: 33.3%;
   }
 }

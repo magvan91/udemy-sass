@@ -83,4 +83,17 @@ h1, h2, h3, h4, h5, h6 {
     vertical-align: bottom;
     padding: 0 20px 20px 20px; }
   .background p {
-    color: #ffffff; }
+    color: #ffffff;
+    font-weight: 700; }
+
+#contenido-principal {
+  box-sizing: border-box; }
+  @media only screen and (min-width: 768px) {
+    #contenido-principal {
+      width: 66.7%;
+      float: left; } }
+
+@media only screen and (min-width: 768px) {
+  aside {
+    float: right;
+    width: 33.3%; } }
