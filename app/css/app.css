@@ -61,13 +61,26 @@ h1, h2, h3, h4, h5, h6 {
 .london {
   background-position: top center;
   height: 600px;
-  background-image: url("../img/imagen01.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen02.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
 
 .estacion {
   background-position: center center;
   height: 200px;
-  background-image: url("../img/imagen02.jpg");
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen03.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
+
+.background {
+  display: table;
+  width: 100%;
+  position: relative; }
+  .background .contenido {
+    display: table-cell;
+    font-size: 1.1rem;
+    position: relative;
+    vertical-align: bottom;
+    padding: 0 20px 20px 20px; }
+  .background p {
+    color: #ffffff; }

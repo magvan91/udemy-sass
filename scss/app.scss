@@ -39,7 +39,7 @@ $desktop: 1024px;
 @mixin imagenes ($img,$height: 100vh,$bgPos: center center){
   background-position: $bgPos;
   height: $height;
-  background-image: url($img);
+  background-image:linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,1.5,0,.6)), url($img);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -116,9 +116,25 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .london{
-  @include imagenes('../img/imagen01.jpg',600px,top center);
+  @include imagenes('../img/imagen02.jpg',600px,top center);
 }
 
 .estacion{
-  @include imagenes('../img/imagen02.jpg',200px);
+  @include imagenes('../img/imagen03.jpg',200px);
+}
+
+.background{
+  display: table;
+  width: 100%;
+  position: relative;
+  .contenido{
+    display: table-cell;
+    font-size: 1.1rem;
+    position: relative;
+    vertical-align: bottom;
+    padding: 0 20px 20px 20px;
+  }
+  p{
+    color: $blanco;
+  }
 }
