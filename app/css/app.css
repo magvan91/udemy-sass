@@ -22,25 +22,52 @@ h1, h2, h3, h4, h5, h6 {
     .container {
       width: 1000px; } }
 
-.navegacion h2 {
-  margin: 0;
-  float: left;
-  display: none; }
-  @media only screen and (min-width: 768px) {
-    .navegacion h2 {
-      display: block; } }
-
-.navegacion nav {
-  display: inline;
-  margin-top: 10px; }
-  @media only screen and (min-width: 768px) {
-    .navegacion nav {
-      float: right; } }
-  .navegacion nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
+.navegacion {
+  background-color: #0549cc; }
+  .navegacion:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .navegacion h2 {
+    margin: 0;
+    float: left;
+    display: none;
+    padding: 5px; }
+    @media only screen and (min-width: 768px) {
+      .navegacion h2 {
+        display: block; } }
+  .navegacion nav {
     display: inline;
-    text-align: center; }
-    .navegacion nav a:hover {
-      color: #ddf517; }
+    margin-top: 10px; }
+    @media only screen and (min-width: 768px) {
+      .navegacion nav {
+        float: right; } }
+    .navegacion nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline;
+      text-align: center;
+      display: block;
+      margin: 20px 0 0 0; }
+      @media only screen and (min-width: 768px) {
+        .navegacion nav a {
+          display: inline;
+          text-align: left; } }
+      .navegacion nav a:hover {
+        color: #ddf517;
+        text-decoration: line-through; }
+
+.london {
+  background-position: top center;
+  height: 600px;
+  background-image: url("../img/imagen01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.estacion {
+  background-position: center center;
+  height: 200px;
+  background-image: url("../img/imagen02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }

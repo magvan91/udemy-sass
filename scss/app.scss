@@ -24,8 +24,24 @@ $desktop: 1024px;
 
 @mixin desktop{
   @media only screen and (min-width: #{$desktop}){
-    @content
+    @content;
   }
+}
+
+@mixin clearfix{
+  &:after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin imagenes ($img,$height: 100vh,$bgPos: center center){
+  background-position: $bgPos;
+  height: $height;
+  background-image: url($img);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 body{
@@ -56,11 +72,14 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-.navegacion{  
+.navegacion{
+  @include clearfix;
+  background-color: $azul;
   h2{
     margin: 0;
     float: left;
     display: none;
+    padding: 5px;
     @include tablet{
       display: block;
     }
@@ -78,9 +97,28 @@ h1,h2,h3,h4,h5,h6{
       font-size: 1rem;
       display: inline;
       text-align: center;
+      display: block;
+      margin: 20px 0 0 0;
+
+      @include tablet{
+        display: inline;
+        text-align: left;
+      }
+
       &:hover{
         color: $amarillo;
+        text-decoration: line-through;
       }
+
     }
+
   }
+}
+
+.london{
+  @include imagenes('../img/imagen01.jpg',600px,top center);
+}
+
+.estacion{
+  @include imagenes('../img/imagen02.jpg',200px);
 }
