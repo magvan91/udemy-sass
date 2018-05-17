@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6{
 
 .navegacion{
   @include clearfix;
-  background-color: $azul;
+  background-color: lighten($azul,35);
   h2{
     margin: 0;
     float: left;
@@ -182,7 +182,7 @@ aside{
 
 .btn{
   display: block;
-  background-color: $rojo;
+  background-color: darken($rojo,15);
   color: $blanco;
   text-decoration: none;
   text-transform: uppercase;

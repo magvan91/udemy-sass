@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 1000px; } }
 
 .navegacion {
-  background-color: #0549cc; }
+  background-color: #87affc; }
   .navegacion:after {
     content: '';
     display: table;
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn, .btn_verde {
   display: block;
-  background-color: #e70707;
+  background-color: #9d0505;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
