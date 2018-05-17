@@ -6,6 +6,8 @@ $amarillo: #ddf517;
 $negro: #000000;
 $rojo: #e70707;
 $azul_plomo: #168bc4;
+$naranja: #f2ab0c;
+$verde: #5ad250;
 
 $color-letra-principal: $negro;
 $color-titulos: $amarillo;
@@ -60,8 +62,6 @@ h1,h2,h3,h4,h5,h6{
 
 .container{
   margin: 0 auto;
-  max-width: 80%;
-
   @include tablet{
      width: 90%;
   }
@@ -142,8 +142,8 @@ h1,h2,h3,h4,h5,h6{
 
 #contenido-principal{
   box-sizing: border-box;
-  padding-right: 40px;
   @include tablet{
+    padding-right: 40px;
     width: 66.7%;
     float: left;
   }
@@ -178,4 +178,29 @@ aside{
     font-size: 1rem;
     color: $blanco;
   }
+}
+
+.btn{
+  display: block;
+  background-color: $rojo;
+  color: $blanco;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  transition: width 2s;
+  padding: 5px 10px;
+  @include tablet{
+    display: inline-block;
+  }
+
+  &:hover{
+    background-color:$naranja;
+  }
+
+}
+
+.btn_verde{
+  @extend .btn;
+  background-color:$verde;
 }
