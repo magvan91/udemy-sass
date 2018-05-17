@@ -87,7 +87,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700; }
 
 #contenido-principal {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding-right: 40px; }
   @media only screen and (min-width: 768px) {
     #contenido-principal {
       width: 66.7%;
@@ -97,3 +98,19 @@ h1, h2, h3, h4, h5, h6 {
   aside {
     float: right;
     width: 33.3%; } }
+
+.noticia {
+  padding-top: 10px;
+  margin-bottom: 30px;
+  border-top: 2px dotted #ffffff; }
+  .noticia h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 1.4rem; }
+  .noticia img {
+    float: left;
+    margin-right: 10px; }
+  .noticia p {
+    font-size: 1rem;
+    color: #ffffff; }
