@@ -8,6 +8,7 @@ $rojo: #e70707;
 $azul_plomo: #168bc4;
 $naranja: #f2ab0c;
 $verde: #5ad250;
+$morado: #9130de;
 
 $color-letra-principal: $negro;
 $color-titulos: $amarillo;
@@ -203,4 +204,43 @@ aside{
 .btn_verde{
   @extend .btn;
   background-color:$verde;
+}
+
+/* Tablas Museos*/
+table{
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  border-collapse: collapse;
+  >caption{
+    text-align: left;
+    font-family: $fuente-titulos;
+    font-size: 1.8;
+    padding: 5px;
+    color: $amarillo;
+  }
+  thead > tr th{
+    background-color: darken($azul,17);
+    color: $blanco;
+    font-size: 1.3rem;
+  }
+  > thead,
+  > tbody{
+    > tr{
+      &:nth-child(odd){
+        background-color: darken($azul,10);
+      }
+      &:hover{
+        background-color: darken($morado, 17);
+        cursor: pointer;
+      }
+      th,
+      td{
+        color: $blanco;
+        padding: 10px;
+        border-bottom: 2px dotted darken($azul_plomo,7);
+      }
+    }
+  }
 }

@@ -132,3 +132,35 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn_verde {
   background-color: #5ad250; }
+
+/* Tablas Museos*/
+table {
+  margin-top: 30px;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  border-collapse: collapse; }
+  table > caption {
+    text-align: left;
+    font-family: "Bitter", serif;
+    font-size: 1.8;
+    padding: 5px;
+    color: #ddf517; }
+  table thead > tr th {
+    background-color: #032b77;
+    color: #ffffff;
+    font-size: 1.3rem; }
+  table > thead > tr:nth-child(odd),
+  table > tbody > tr:nth-child(odd) {
+    background-color: #04379a; }
+  table > thead > tr:hover,
+  table > tbody > tr:hover {
+    background-color: #63199e;
+    cursor: pointer; }
+  table > thead > tr th,
+  table > thead > tr td,
+  table > tbody > tr th,
+  table > tbody > tr td {
+    color: #ffffff;
+    padding: 10px;
+    border-bottom: 2px dotted #1274a4; }
