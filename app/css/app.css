@@ -115,6 +115,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff; }
 
 .btn, .btn_verde {
+  border-radius: 5px;
   display: block;
   background-color: #9d0505;
   color: #ffffff;
@@ -164,3 +165,24 @@ table {
     color: #ffffff;
     padding: 10px;
     border-bottom: 2px dotted #1274a4; }
+
+/*Galeria*/
+.galeria:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.galeria li.imagen {
+  float: left;
+  list-style: none;
+  width: 19.2%; }
+  .galeria li.imagen:nth-child(n) {
+    margin-right: 1%;
+    margin-bottom: 1%; }
+  .galeria li.imagen:nth-child(5n + 1) {
+    margin-right: 0;
+    margin-bottom: 0; }
+  .galeria li.imagen img {
+    border-radius: 3px;
+    display: block;
+    max-width: 100%; }

@@ -180,8 +180,12 @@ aside{
     color: $blanco;
   }
 }
+@mixin bordes-redondos($size){
+  border-radius: $size;
+}
 
 .btn{
+  @include bordes-redondos(5px);
   display: block;
   background-color: darken($rojo,15);
   color: $blanco;
@@ -241,6 +245,33 @@ table{
         padding: 10px;
         border-bottom: 2px dotted darken($azul_plomo,7);
       }
+    }
+  }
+}
+
+/*Galeria*/
+@mixin gridImagenes($cantidad, $margin) {
+    width: ((100% - (($cantidad - 1) * $margin))/$cantidad);
+    &:nth-child(n) {
+      margin-right: $margin;
+      margin-bottom: $margin;
+    }
+    &:nth-child(#{$cantidad}n + 1) {
+        margin-right:0;
+        margin-bottom: 0;
+    }
+}
+
+.galeria{
+  @include clearfix;
+  li.imagen{
+    float: left;
+    list-style: none;
+    @include gridImagenes(5,1%);
+    img{
+      @include bordes-redondos(3px);
+      display: block;
+      max-width: 100%;
     }
   }
 }
