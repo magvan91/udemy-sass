@@ -57,6 +57,19 @@
     display: block;
     max-width: 100%; }
 
+/*Grid*/
+/*
+
+Esta lo que hace es buscar en el HTML clases que comiencen con la palabra 'col-' es decir:
+- <div class="col-4">
+- <div class="col-12">
+Y los estilos aplicaran para todas estas clases
+*/
+[class*='col-'] {
+  float: left;
+  padding: 1rem;
+  width: 100%; }
+
 @media only screen and (min-width: 768px) {
   .col-1 {
     width: 8.33333%; }
@@ -131,19 +144,6 @@ h1, h2, h3, h4, h5, h6 {
   .background p {
     color: #ffffff;
     font-weight: 700; }
-
-/*Grid*/
-/*
-
-Esta lo que hace es buscar en el HTML clases que comiencen con la palabra 'col-' es decir:
-- <div class="col-4">
-- <div class="col-12">
-Y los estilos aplicaran para todas estas clases
-*/
-[class*='col-'] {
-  float: left;
-  padding: 1rem;
-  width: 100%; }
 
 /*Seccion de noticias*/
 .noticia {

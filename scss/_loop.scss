@@ -1,3 +1,18 @@
+/*Grid*/
+
+/*
+
+Esta lo que hace es buscar en el HTML clases que comiencen con la palabra 'col-' es decir:
+- <div class="col-4">
+- <div class="col-12">
+Y los estilos aplicaran para todas estas clases
+*/
+[class*='col-']{
+  float: left;
+  padding: 1rem;
+  width: 100%;
+}
+
 @include tablet{
   @for $i from 1 through $numero-columnas{
     .col-#{$i}{
