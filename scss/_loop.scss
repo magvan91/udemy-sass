@@ -11,6 +11,7 @@ Y los estilos aplicaran para todas estas clases
   float: left;
   padding: 1rem;
   width: 100%;
+  @include border-box;
 }
 
 @include tablet{

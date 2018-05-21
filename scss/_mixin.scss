@@ -41,3 +41,9 @@
 @mixin bordes-redondos($size){
   border-radius: $size;
 }
+
+@mixin border-box{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}

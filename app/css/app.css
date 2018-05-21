@@ -68,7 +68,10 @@ Y los estilos aplicaran para todas estas clases
 [class*='col-'] {
   float: left;
   padding: 1rem;
-  width: 100%; }
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 @media only screen and (min-width: 768px) {
   .col-1 {
@@ -144,6 +147,15 @@ h1, h2, h3, h4, h5, h6 {
   .background p {
     color: #ffffff;
     font-weight: 700; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 768px) {
+  .row {
+    margin: -1em; } }
 
 /*Seccion de noticias*/
 .noticia {
