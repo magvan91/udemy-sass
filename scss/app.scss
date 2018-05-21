@@ -4,6 +4,7 @@
 @import 'mixin';
 @import 'nav';
 @import 'galeria.scss';
+@import 'loop.scss';
 
 body{
   margin: 0;
@@ -31,8 +32,6 @@ h1,h2,h3,h4,h5,h6{
 
 }
 
-
-
 .london{
   @include imagenes('../img/imagen02.jpg',600px,top center);
 }
@@ -58,22 +57,24 @@ h1,h2,h3,h4,h5,h6{
   }
 }
 
-#contenido-principal{
-  box-sizing: border-box;
-  @include tablet{
-    padding-right: 40px;
-    width: 66.7%;
-    float: left;
-  }
+/*Grid*/
+
+/*
+
+Esta lo que hace es buscar en el HTML clases que comiencen con la palabra 'col-' es decir:
+- <div class="col-4">
+- <div class="col-12">
+Y los estilos aplicaran para todas estas clases
+*/
+[class*='col-']{
+  float: left;
+  padding: 1rem;
+  width: 100%;
 }
 
-aside{
-  @include tablet{
-    float: right;
-    width: 33.3%;
-  }
-}
 
+
+/*Seccion de noticias*/
 .noticia{
   padding-top: 10px;
   margin-bottom: 30px;

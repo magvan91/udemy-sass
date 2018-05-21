@@ -1,0 +1,7 @@
+@include tablet{
+  @for $i from 1 through $numero-columnas{
+    .col-#{$i}{
+      width: 100% / $numero-columnas * $i;
+    }
+  }
+}

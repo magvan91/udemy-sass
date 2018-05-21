@@ -1,26 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,700");
 /* Medias queries */
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #168bc4;
-  font-size: 1.4rem;
-  color: #000000;
-  font-family: "Open Sans", sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #ddf517;
-  font-family: "Bitter", serif; }
-
-.container {
-  margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
-    .container {
-      width: 90%; } }
-  @media only screen and (min-width: 1024px) {
-    .container {
-      width: 1000px; } }
-
+/* Grid */
 .navegacion {
   background-color: #87affc; }
   .navegacion:after {
@@ -57,6 +37,73 @@ h1, h2, h3, h4, h5, h6 {
         color: #ddf517;
         text-decoration: line-through; }
 
+.galeria:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.galeria li.imagen {
+  float: left;
+  list-style: none;
+  width: 19.2%; }
+  .galeria li.imagen:nth-child(n) {
+    margin-right: 1%;
+    margin-bottom: 1%; }
+  .galeria li.imagen:nth-child(5n + 1) {
+    margin-right: 0;
+    margin-bottom: 0; }
+  .galeria li.imagen img {
+    border-radius: 3px;
+    display: block;
+    max-width: 100%; }
+
+@media only screen and (min-width: 768px) {
+  .col-1 {
+    width: 8.33333%; }
+  .col-2 {
+    width: 16.66667%; }
+  .col-3 {
+    width: 25%; }
+  .col-4 {
+    width: 33.33333%; }
+  .col-5 {
+    width: 41.66667%; }
+  .col-6 {
+    width: 50%; }
+  .col-7 {
+    width: 58.33333%; }
+  .col-8 {
+    width: 66.66667%; }
+  .col-9 {
+    width: 75%; }
+  .col-10 {
+    width: 83.33333%; }
+  .col-11 {
+    width: 91.66667%; }
+  .col-12 {
+    width: 100%; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #168bc4;
+  font-size: 1.4rem;
+  color: #000000;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ddf517;
+  font-family: "Bitter", serif; }
+
+.container {
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 1000px; } }
+
 .london {
   background-position: top center;
   height: 600px;
@@ -85,19 +132,20 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: 700; }
 
-#contenido-principal {
-  box-sizing: border-box; }
-  @media only screen and (min-width: 768px) {
-    #contenido-principal {
-      padding-right: 40px;
-      width: 66.7%;
-      float: left; } }
+/*Grid*/
+/*
 
-@media only screen and (min-width: 768px) {
-  aside {
-    float: right;
-    width: 33.3%; } }
+Esta lo que hace es buscar en el HTML clases que comiencen con la palabra 'col-' es decir:
+- <div class="col-4">
+- <div class="col-12">
+Y los estilos aplicaran para todas estas clases
+*/
+[class*='col-'] {
+  float: left;
+  padding: 1rem;
+  width: 100%; }
 
+/*Seccion de noticias*/
 .noticia {
   padding-top: 10px;
   margin-bottom: 30px;
@@ -165,24 +213,3 @@ table {
     color: #ffffff;
     padding: 10px;
     border-bottom: 2px dotted #1274a4; }
-
-/*Galeria*/
-.galeria:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.galeria li.imagen {
-  float: left;
-  list-style: none;
-  width: 19.2%; }
-  .galeria li.imagen:nth-child(n) {
-    margin-right: 1%;
-    margin-bottom: 1%; }
-  .galeria li.imagen:nth-child(5n + 1) {
-    margin-right: 0;
-    margin-bottom: 0; }
-  .galeria li.imagen img {
-    border-radius: 3px;
-    display: block;
-    max-width: 100%; }
