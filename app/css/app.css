@@ -1,6 +1,84 @@
 @import url("https://fonts.googleapis.com/css?family=Bitter|Open+Sans:400,700");
 /* Medias queries */
 /* Grid */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #168bc4;
+  font-size: 1.4rem;
+  color: #000000;
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ddf517;
+  font-family: "Bitter", serif; }
+
+.container {
+  margin: 0 auto; }
+  @media only screen and (min-width: 768px) {
+    .container {
+      width: 90%; } }
+  @media only screen and (min-width: 1024px) {
+    .container {
+      width: 1000px; } }
+
+.london {
+  background-position: top center;
+  height: 600px;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.estacion {
+  background-position: center center;
+  height: 200px;
+  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.background {
+  display: table;
+  width: 100%;
+  position: relative; }
+  .background .contenido {
+    display: table-cell;
+    font-size: 1.1rem;
+    position: relative;
+    vertical-align: bottom;
+    padding: 0 20px 20px 20px; }
+  .background p {
+    color: #ffffff;
+    font-weight: 700; }
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+@media only screen and (min-width: 768px) {
+  .row {
+    margin: -1em; } }
+
+.btn, .btn_verde, .servicios-lista .btn-servicio {
+  border-radius: 5px;
+  display: block;
+  background-color: #9d0505;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1rem;
+  transition: width 2s;
+  padding: 5px 10px; }
+  @media only screen and (min-width: 768px) {
+    .btn, .btn_verde, .servicios-lista .btn-servicio {
+      display: inline-block; } }
+  .btn:hover, .btn_verde:hover, .servicios-lista .btn-servicio:hover {
+    background-color: #eb7d0c; }
+
+.btn_verde {
+  background-color: #5ad250; }
+
 .navegacion {
   background-color: #87affc; }
   .navegacion:after {
@@ -99,63 +177,21 @@ Y los estilos aplicaran para todas estas clases
   .col-12 {
     width: 100%; } }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #168bc4;
-  font-size: 1.4rem;
-  color: #000000;
-  font-family: "Open Sans", sans-serif; }
-
-h1, h2, h3, h4, h5, h6 {
-  color: #ddf517;
-  font-family: "Bitter", serif; }
-
-.container {
-  margin: 0 auto; }
-  @media only screen and (min-width: 768px) {
-    .container {
-      width: 90%; } }
-  @media only screen and (min-width: 1024px) {
-    .container {
-      width: 1000px; } }
-
-.london {
-  background-position: top center;
-  height: 600px;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen02.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.estacion {
-  background-position: center center;
-  height: 200px;
-  background-image: linear-gradient(to bottom, transparent, rgba(0, 2, 0, 0.6)), url("../img/imagen03.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.background {
-  display: table;
-  width: 100%;
-  position: relative; }
-  .background .contenido {
-    display: table-cell;
-    font-size: 1.1rem;
-    position: relative;
-    vertical-align: bottom;
-    padding: 0 20px 20px 20px; }
-  .background p {
+.servicios-lista {
+  list-style: none; }
+  .servicios-lista li {
+    text-align: center; }
+  .servicios-lista p {
     color: #ffffff;
-    font-weight: 700; }
-
-.row:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-@media only screen and (min-width: 768px) {
-  .row {
-    margin: -1em; } }
+    font-size: 1rem; }
+  .servicios-lista .btn-servicio {
+    background-color: #eb7d0c;
+    font-weight: bold;
+    color: #000000; }
+    .servicios-lista .btn-servicio:hover {
+      color: #ffffff; }
+  .servicios-lista h3 {
+    margin: 0; }
 
 /*Seccion de noticias*/
 .noticia {
@@ -173,26 +209,6 @@ h1, h2, h3, h4, h5, h6 {
   .noticia p {
     font-size: 1rem;
     color: #ffffff; }
-
-.btn, .btn_verde {
-  border-radius: 5px;
-  display: block;
-  background-color: #9d0505;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1rem;
-  transition: width 2s;
-  padding: 5px 10px; }
-  @media only screen and (min-width: 768px) {
-    .btn, .btn_verde {
-      display: inline-block; } }
-  .btn:hover, .btn_verde:hover {
-    background-color: #f2ab0c; }
-
-.btn_verde {
-  background-color: #5ad250; }
 
 /* Tablas Museos*/
 table {

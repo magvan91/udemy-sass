@@ -2,66 +2,13 @@
 
 @import 'variables';
 @import 'mixin';
+@import 'layout';
 @import 'nav';
-@import 'galeria.scss';
-@import 'loop.scss';
+@import 'galeria';
+@import 'loop';
+@import 'servicios';
 
-body{
-  margin: 0;
-  padding: 0;
-  background-color: $azul_plomo;
-  font-size: 1.4rem;
-  color: $color-letra-principal;
-  font-family: $fuente-principal;
-}
 
-h1,h2,h3,h4,h5,h6{
-  color: $color-titulos;
-  font-family: $fuente-titulos;
-}
-
-.container{
-  margin: 0 auto;
-  @include tablet{
-     width: 90%;
-  }
-
-  @include desktop{
-    width: 1000px;
-  }
-
-}
-
-.london{
-  @include imagenes('../img/imagen02.jpg',600px,top center);
-}
-
-.estacion{
-  @include imagenes('../img/imagen03.jpg',200px);
-}
-
-.background{
-  display: table;
-  width: 100%;
-  position: relative;
-  .contenido{
-    display: table-cell;
-    font-size: 1.1rem;
-    position: relative;
-    vertical-align: bottom;
-    padding: 0 20px 20px 20px;
-  }
-  p{
-    color: $blanco;
-    font-weight: 700;
-  }
-}
-.row{
-  @include clearfix;
-  @include tablet{
-    margin: 0 - 1em;
-  }
-}
 
 /*Seccion de noticias*/
 .noticia{
@@ -89,31 +36,6 @@ h1,h2,h3,h4,h5,h6{
 }
 
 
-.btn{
-  @include bordes-redondos(5px);
-  display: block;
-  background-color: darken($rojo,15);
-  color: $blanco;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 1rem;
-  transition: width 2s;
-  padding: 5px 10px;
-  @include tablet{
-    display: inline-block;
-  }
-
-  &:hover{
-    background-color:$naranja;
-  }
-
-}
-
-.btn_verde{
-  @extend .btn;
-  background-color:$verde;
-}
 
 /* Tablas Museos*/
 table{
