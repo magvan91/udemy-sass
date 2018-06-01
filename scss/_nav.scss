@@ -1,0 +1,42 @@
+.navegacion{
+  @include clearfix;
+  background-color: lighten($azul,35);
+  h2{
+    margin: 0;
+    float: left;
+    display: none;
+    padding: 5px;
+    @include tablet{
+      display: block;
+    }
+  }
+  nav{
+    display: inline;
+    margin-top: 10px;
+
+    @include tablet{
+      float: right;
+    }
+    a{
+      color: $blanco;
+      text-decoration: none;
+      font-size: 1rem;
+      display: inline;
+      text-align: center;
+      display: block;
+      margin: 20px 0 0 0;
+
+      @include tablet{
+        display: inline;
+        text-align: left;
+      }
+
+      &:hover{
+        color: $amarillo;
+        text-decoration: line-through;
+      }
+
+    }
+
+  }
+}
